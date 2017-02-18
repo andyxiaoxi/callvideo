@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.rl.videocall.callvideo.MainActivity">
+    
+    <LinearLayout
+        android:id="@+id/channel_layout"
+        android:layout_marginTop="120dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="频道："
+           android:textSize="20sp"
+           android:padding="3dp"/>
+        <EditText
+            android:id="@+id/et_channel"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:inputType="text"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/psw_layout"
+        android:layout_below="@+id/channel_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="加密："
+            android:textSize="20sp"
+            android:padding="3dp"/>
+        <EditText
+            android:id="@+id/et_psw"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:inputType="text"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/bt_join"
+        android:enabled="false"
+        android:layout_marginTop="10dp"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/psw_layout"
+        android:text="join"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="join"/>
+</RelativeLayout>
