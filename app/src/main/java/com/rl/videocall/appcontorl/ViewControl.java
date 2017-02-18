@@ -85,6 +85,7 @@ public class ViewControl {
     private void addSurfaceView(int uid){
         SurfaceView surfaceView = RtcEngine.CreateRendererView(context);   //创建渲染视图
         mList.add(new SurfaceModel(null,uid,surfaceView,0));               //添加到数据源
+        //遍历数据集合
     }
 
 }

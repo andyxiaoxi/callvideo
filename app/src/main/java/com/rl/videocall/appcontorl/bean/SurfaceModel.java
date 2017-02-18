@@ -17,6 +17,8 @@ public class SurfaceModel {
 
     private ViewGroup parent;     //surfaceView 依赖的父容器
 
+    private int videoflag;        //标记是本地的，还是远程的   0：本地       1：远程
+
     /**
      * 构造方法
      * @param parent
