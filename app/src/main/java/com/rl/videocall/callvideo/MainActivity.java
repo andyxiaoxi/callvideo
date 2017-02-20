@@ -62,7 +62,8 @@ public class MainActivity extends AppCompatActivity {
     public void join(View v){
         //跳转到通话界面
        // Intent intent = new Intent(this,VideoCallActivity.class);
-        Intent intent = new Intent(this,VideoCallTestActivity.class);
+       // Intent intent = new Intent(this,VideoCallTestActivity.class);
+        Intent intent = new Intent(this,VideoLevelupActivity.class);
         intent.putExtra("channelName",channel);
         startActivity(intent);
     }

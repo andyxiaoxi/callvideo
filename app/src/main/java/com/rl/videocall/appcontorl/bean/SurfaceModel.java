@@ -26,11 +26,12 @@ public class SurfaceModel {
      * @param surfaceView
      * @param status
      */
-    public SurfaceModel(ViewGroup parent, int uid, SurfaceView surfaceView, int status) {
+    public SurfaceModel(ViewGroup parent, int uid, SurfaceView surfaceView, int status,int videoflag) {
         this.parent = parent;
         this.uid = uid;
         this.surfaceView = surfaceView;
         this.status = status;
+        this.videoflag = videoflag;
     }
 
 
@@ -73,6 +74,16 @@ public class SurfaceModel {
                 ", uid=" + uid +
                 ", surfaceView=" + surfaceView +
                 ", status=" + status +
+                ", videoflag=" + videoflag +
                 '}';
     }
+
+    public int getVideoflag() {
+        return videoflag;
+    }
+
+    public void setVideoflag(int videoflag) {
+        this.videoflag = videoflag;
+    }
+
 }
